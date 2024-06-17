@@ -1,0 +1,101 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - abilities
+  - perpheral_req
+  - leave_req
+  - workday_req
+
+actions:
+- utter_greet
+- utter_cheerup
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_abilities
+- utter_peripheral
+- utter_workday
+- utter_leave
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_abilities:
+   - text: "I can assist you in ordering a pizza "
+
+  utter_ask_phone:
+  - text: "Can I get your phone number please?"
+
+  # utter_first_name:
+  #  - text: "Please provide your first name" 
+  
+  # utter_last_name:
+  #  - text: "Please provide your last name" 
+
+  # utter_feedback:
+  #  - text: "Please provide your feedback" 
+
+  # utter_submit:
+  #  - text: "Would you like to submit the details?"  
+
+
+  utter_peripehral:
+   - text: "I understand that you would like to order a peripheral
+            Follow thE below mentioned stepss
+            1) Click on this link and go to MYIT
+            2) Fill this form with necessary details
+            3) Give a business reason for your request
+            4) Submit the form and wait for the request to get accepted
+            5) Upon the request getting accpted, you can collect your peripheral from the nearest Dell office or get it shipped to your location, depending on the option you have selected"
+
+
+
+  utter_workday:
+   - text: "To understand how to fill your timesheet
+            1) Open your workday profile
+            2) click on the side menu and go to your time
+            3) Find your calendar and click on quick addd
+            4) add your time AM TO PM and do the same for all 5 days (you can fill in advance of you want)
+            5) click on submit when all your entries have been filled
+            6) Make sure you submit at the end of the day"
+
+
+  utter_leave:
+  - text: "To request for time off
+            1) Open your workday profile
+            2) Click on the menu bar
+            3) Select Time off and Leave
+            4) If you would like to see your balance, click on Time offf Balance , else to request a time off click on Request Time off
+            5) Select the  date from the calendar and then click the request time off button from the left
+            6) Select the type of leave as casual, sick, earned or something else and then ,click on submit
+            7) Your leave request has now been sent for review to your manager"                  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

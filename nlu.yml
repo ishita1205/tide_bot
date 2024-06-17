@@ -1,0 +1,134 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: abilities
+  examples: |
+    - what can you do?
+    - what are your capabilities?
+    - how can you help me?
+    - help
+    - do work
+
+- intent: peripheral_req
+  examples: |
+    - I would like to request for a peripheral
+    - I would like to request for a pc
+    - Place an order for a headphone for me
+    - order mouse
+    - i want to order a jabra headphone
+    - how do i order a monitor for work from home
+    - order a new laptop
+
+- intent: workday_req
+  examples: |
+   - how to fill my timesheet
+   - timesheet unable to fill
+   - cannot submit timesheet
+   - timesheet
+   - how to enter date
+   - how to submit myentry
+
+- intent: leave_req
+  examples: |
+   - how to request for a holiday
+   - i want to check my holiday balance
+   - i want to take a sick leave
+   - sick leave
+   - casual leave
+   - how to apply for a casual leave
+   - do i need my manager's approval for applying for a sick leave
+   - sick leave
+   - leave
+   
+
+
+

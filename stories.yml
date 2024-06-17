@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: abilities
+  steps:
+   - intent: abilities
+   - action: utter_abilities
+
+- story: peripheral_order
+  steps:
+   - intent: peripheral_req
+   - action: utter_peripheral
+
+# - story: happy phone
+#   steps:
+#   - intent: greet
+#   - action: utter_ask_phone
+#   - intent: phone
+#     entities: 
+#     - number: 7827109694
+#   - slot_was_set:
+#   - phone: 86083733833
+#   - action: action_say_phone  
+
+- story: workday_timesheet
+  steps:
+    - intent: workday_req
+    - intent: utter_workday
+
+- story: leave_req
+  steps:
+   - intent: leave_req
+   - domain: utter_leave
